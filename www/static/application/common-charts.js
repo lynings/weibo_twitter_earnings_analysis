@@ -54,4 +54,57 @@ class CommonCharts {
         };
         return option;
     }
+
+    createLineOption(title, legendData, xAxisData, seriesData, yAxisName) {
+
+        let option = {
+            title: {
+                text: title,
+                left: 'center',
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: legendData,
+                bottom: 0,
+            },
+            xAxis: {
+                type: 'category',
+                data: xAxisData
+            },
+            yAxis: {
+                type: 'value',
+                name: yAxisName
+            },
+            series: seriesData
+        };
+
+        return option;
+    }
+
+    createLineAndBarMixOption(title, legendData, xAxisData, seriesData, yAxis) {
+
+        let option = {
+            title: {
+                text: title,
+                left: 'center',
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: legendData,
+                bottom: 0,
+            },
+            xAxis: {
+                type: 'category',
+                data: xAxisData
+            },
+            yAxis: yAxis,
+            series: seriesData
+        };
+
+        return option;
+    }
 }

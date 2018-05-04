@@ -1,7 +1,7 @@
 [
   {
-    "quarter": "一季",
-    "year": "2017",
+    "quarter": 1,
+    "year": 2017,
     "other_service_revenue": 29900000,
     "mua": 340000000,
     "dua": 154000000,
@@ -12,8 +12,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第二季度",
-    "year": "2017",
+    "quarter": 2,
+    "year": 2017,
     "other_service_revenue": 35000000,
     "mua": 361000000,
     "dua": 159000000,
@@ -24,8 +24,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第二季度",
-    "year": "2016",
+    "quarter": 2,
+    "year": 2016,
     "other_service_revenue": 19700000,
     "mua": 282000000,
     "dua": 126000000,
@@ -36,8 +36,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第三季度",
-    "year": "2017",
+    "quarter": 3,
+    "year": 2017,
     "other_service_revenue": 43200000,
     "mua": 376000000,
     "dua": 165000000,
@@ -48,8 +48,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第四季度",
-    "year": "2017",
+    "quarter": 4,
+    "year": 2017,
     "other_service_revenue": 45100000,
     "mua": 392000000,
     "dua": 172000000,
@@ -60,8 +60,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第三季度",
-    "year": "2016",
+    "quarter": 3,
+    "year": 2016,
     "other_service_revenue": 20200000,
     "mua": 297000000,
     "dua": 132000000,
@@ -72,8 +72,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第一季度",
-    "year": "2016",
+    "quarter": 1,
+    "year": 2016,
     "other_service_revenue": 20000000,
     "mua": 261000000,
     "dua": 120000000,
@@ -84,8 +84,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第四季度",
-    "year": "2016",
+    "quarter": 4,
+    "year": 2016,
     "other_service_revenue": 24900000,
     "mua": 313000000,
     "dua": 139000000,
@@ -96,8 +96,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第一季度",
-    "year": "2015",
+    "quarter": 1,
+    "year": 2015,
     "other_service_revenue": 17100000,
     "mua": 198000000,
     "dua": 89000000,
@@ -108,8 +108,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第二季度",
-    "year": "2015",
+    "quarter": 2,
+    "year": 2015,
     "other_service_revenue": 20000000,
     "mua": 212000000,
     "dua": 93000000,
@@ -120,8 +120,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第三季度",
-    "year": "2015",
+    "quarter": 3,
+    "year": 2015,
     "other_service_revenue": 18900000,
     "mua": 222000000,
     "dua": 100000000,
@@ -132,8 +132,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第四季度",
-    "year": "2015",
+    "quarter": 4,
+    "year": 2015,
     "other_service_revenue": 19500000,
     "mua": 236000000,
     "dua": 106000000,
@@ -144,8 +144,8 @@
     "company": "微博"
   },
   {
-    "quarter": "第二季度",
-    "year": "2017",
+    "quarter": 2,
+    "year": 2017,
     "other_service_revenue": 85000000,
     "mua": 328000000,
     "dua": -1,
@@ -156,8 +156,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第三季度",
-    "year": "2017",
+    "quarter": 3,
+    "year": 2017,
     "other_service_revenue": 87000000,
     "mua": 330000000,
     "dua": -1,
@@ -168,8 +168,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第四季度",
-    "year": "2017",
+    "quarter": 4,
+    "year": 2017,
     "other_service_revenue": 87000000,
     "mua": 330000000,
     "dua": -1,
@@ -180,8 +180,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第一季度",
-    "year": "2016",
+    "quarter": 1,
+    "year": 2016,
     "other_service_revenue": 64000000,
     "mua": 310000000,
     "dua": -1,
@@ -192,8 +192,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第二季度",
-    "year": "2016",
+    "quarter": 2,
+    "year": 2016,
     "other_service_revenue": 67000000,
     "mua": 313000000,
     "dua": -1,
@@ -204,8 +204,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第三季度",
-    "year": "2016",
+    "quarter": 3,
+    "year": 2016,
     "other_service_revenue": 71000000,
     "mua": 317000000,
     "dua": -1,
@@ -216,8 +216,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第四季度",
-    "year": "2016",
+    "quarter": 4,
+    "year": 2016,
     "other_service_revenue": 79000000,
     "mua": 319000000,
     "dua": -1,
@@ -228,8 +228,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第二季度",
-    "year": "2015",
+    "quarter": 2,
+    "year": 2015,
     "other_service_revenue": 50000000,
     "mua": 316000000,
     "dua": -1,
@@ -240,8 +240,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第三季度",
-    "year": "2015",
+    "quarter": 3,
+    "year": 2015,
     "other_service_revenue": 56000000,
     "mua": 320000000,
     "dua": -1,
@@ -252,8 +252,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第四季度",
-    "year": "2015",
+    "quarter": 4,
+    "year": 2015,
     "other_service_revenue": 70000000,
     "mua": 320000000,
     "dua": -1,
@@ -264,8 +264,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第一季度",
-    "year": "2017",
+    "quarter": 1,
+    "year": 2017,
     "other_service_revenue": 74000000,
     "mua": 328000000,
     "dua": -1,
@@ -276,8 +276,8 @@
     "company": "Twitter"
   },
   {
-    "quarter": "第一季度",
-    "year": "2015",
+    "quarter": 1,
+    "year": 2015,
     "other_service_revenue": 48000000,
     "mua": 328000000,
     "dua": -1,

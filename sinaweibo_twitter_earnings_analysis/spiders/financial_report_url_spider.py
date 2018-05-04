@@ -13,8 +13,8 @@ class FinancialReportUrlSpider(scrapy.Spider):
     name = "financial_report_url"
 
     target_company_list = ['微博', 'Twitter']
-    target_year_list = ['2017', '2016', '2015']
-    quarter_list = ['一季', '第一季度', '第二季度', '第三季度', '第四季度']
+    target_year_list = [2017, 2016, 2015]
+    quarters_map = {'一季': 1, '第一季度': 1, '第二季度': 2, '第三季度': 3, '第四季度': 4}
 
     def start_requests(self):
         urls = [
@@ -38,16 +38,16 @@ class FinancialReportUrlSpider(scrapy.Spider):
                 for year_selector in year_selectors:
                     # 提取 year
                     year = Selector(text=year_selector).css("a::text").extract_first()
-                    if year in self.target_year_list:
+                    if int(year) in self.target_year_list:
                         # 提取该年对应的季度财报id
                         id_sign = 'div' + re.search('\((.+)\)', str(year_selector)).group(1)
                         url_selectors = company_selector.css('#' + id_sign + '>a')
                         for url_selector in url_selectors:
                             quarter = url_selector.css('a::text').extract_first()
-                            if quarter in self.quarter_list:
+                            if quarter in self.quarters_map:
                                 yield {
                                     'company': company_name,
-                                    'year': year,
-                                    'quarter': quarter,
+                                    'year': int(year),
+                                    'quarter': self.quarters_map[quarter],
                                     'url': re.search('href="(.+)"', str(url_selector.css('a').extract_first())).group(1)
                                 }

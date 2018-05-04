@@ -17,12 +17,12 @@ class FinancialReportSpider(scrapy.Spider):
 
     def start_requests(self):
         with open(self.financial_report_url_file_path, 'r') as load_f:
-            financial_reposts = json.load(load_f, object_hook=handle_json_object)
+            financial_reports = json.load(load_f, object_hook=handle_json_object)
 
         sina_bolg_reports = list(
-            map(lambda report: report, filter(lambda o: o.company == '微博', financial_reposts)))
+            map(lambda report: report, filter(lambda o: o.company == '微博', financial_reports)))
 
-        twitter_reports = list(filter(lambda o: o.company == 'Twitter', financial_reposts))
+        twitter_reports = list(filter(lambda o: o.company == 'Twitter', financial_reports))
 
         for report in sina_bolg_reports:
             yield scrapy.Request(url=report.url, callback=self.parse, meta={'report': report})
@@ -32,7 +32,7 @@ class FinancialReportSpider(scrapy.Spider):
 
     def parse(self, response):
         report = response.meta['report']
-        print(report.company + report.year + report.quarter)
+        print(report.company + str(report.year) + str(report.quarter))
 
         html = response.css('#artibody').extract_first()
 

@@ -6,7 +6,7 @@
         "year": 2017,
         "reports": [
           {
-            "quarter": "第一季度",
+            "quarter": 1,
             "url": "https://xxx.com"
           }
         ]

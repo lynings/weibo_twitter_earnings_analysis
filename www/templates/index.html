@@ -20,9 +20,17 @@
 </head>
 <body>
 
-<div id="blog" style="width: 100%;height:320px;"></div>
+<div id="blogChart" style="width: 100%;height:320px;"></div>
 
-<div id="twitter" style="width: 100%;height:320px;margin-top: 20px;"></div>
+<div id="twitterChart" style="width: 100%;height:320px;margin-top: 20px;"></div>
+
+<div id="blogTwitterQuarterNetProfitLineChart" style="width: 100%;height:320px;margin-top: 20px;"></div>
+
+<div id="blogTwitterQuarterMUALineChart" style="width: 100%;height:320px;margin-top: 20px;"></div>
+
+<div id="blogQuarterLineAndBarChart" style="width: 100%;height:320px;margin-top: 20px;"></div>
+
+<div id="twitterQuarterLineAndBarChart" style="width: 100%;height:320px;margin-top: 20px;"></div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
@@ -40,9 +48,17 @@
 
         const financialCharts = new FinancialCharts();
 
-        financialCharts.drawMultipleBarRevenues(document.getElementById('blog'), blogQuarterFinancial, '微博近三年财报分析');
+        financialCharts.drawMultipleBarRevenues(document.getElementById('blogChart'), blogQuarterFinancial, '微博近三年财报分析');
 
-        financialCharts.drawMultipleBarRevenues(document.getElementById('twitter'), twitterQuarterFinancial, 'Twitter 近三年财报分析');
+        financialCharts.drawMultipleBarRevenues(document.getElementById('twitterChart'), twitterQuarterFinancial, 'Twitter 近三年财报分析');
+
+        financialCharts.drawMultipleLineOfNetProfit(document.getElementById('blogTwitterQuarterNetProfitLineChart'), twitterQuarterFinancial.concat(blogQuarterFinancial));
+
+        financialCharts.drawMultipleLineOfMUA(document.getElementById('blogTwitterQuarterMUALineChart'), twitterQuarterFinancial.concat(blogQuarterFinancial));
+
+        financialCharts.drawLineAndBarMixOfMUAAndNetRevenue(document.getElementById('blogQuarterLineAndBarChart'), blogQuarterFinancial, '微博');
+
+        financialCharts.drawLineAndBarMixOfMUAAndNetRevenue(document.getElementById('twitterQuarterLineAndBarChart'), twitterQuarterFinancial, 'Twitter');
     });
 </script>
 </body>
